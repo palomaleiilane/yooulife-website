@@ -1,0 +1,43 @@
+// Loading
+.loading-enter-active,
+.loading-leave-active {
+	transition: all .5s $easeInOutQuad;
+}
+
+.loading-enter{
+	transform: translate(-50%, -50%) scale(.9);
+	opacity: 0;
+}
+
+.loading-leave-active{
+	transform: translate(-50%, -50%) scale(3);
+	opacity: 0;
+}
+
+.router-enter-active, .router-leave-active {
+	transition: all .6s $easeInOutQuad;
+}
+
+.router-enter{
+	transform: translateX(-20px);
+	opacity: 0;
+}
+
+.router-leave-active{
+	transform: translateX(20px);
+	opacity: 0;
+}
+
+.alert-enter-active, .alert-leave-active {
+	transition: all .4s $easeInOutQuad;
+}
+
+.alert-enter{
+	transform: translateX(100%);
+	opacity: 0;
+}
+
+.alert-leave-active{
+	transform: translateX(100%);
+	opacity: 0;
+}
